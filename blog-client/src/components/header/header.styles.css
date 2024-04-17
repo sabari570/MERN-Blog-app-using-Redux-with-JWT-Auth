@@ -1,0 +1,77 @@
+nav {
+    width: 100vw;
+    height: 5rem;
+    display: grid;
+    place-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    border-bottom: 4px solid var(--color-bg);
+    /* This style if=s given to blur the content that is behind the navbar */
+    backdrop-filter: blur(20px);
+}
+
+.nav-logo {
+    width: 3rem;
+    display: block;
+}
+
+.nav-logo img {
+    display: block;
+    object-fit: cover;
+    border-radius: var(--radius-4);
+    width: 100%;
+}
+
+.nav-container {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.nav-toggle-btn {
+    display: none;
+}
+
+
+/* MAKING NAVBAR RESPONSIVENESS */
+@media screen and (max-width: 800px) {
+    .nav-container {
+        position: relative;
+    }
+
+    .nav-menu {
+        position: absolute;
+        top: 5rem;
+        right: 0rem;
+        flex-direction: column;
+        gap: 0;
+        align-items: flex-start;
+    }
+
+    .nav-menu li {
+        width: 100%;
+        box-shadow: -2rem 4rem 4rem rgba(0, 0, 0, 0.26);
+    }
+
+    .nav-menu li a {
+        display: block;
+        background: var(--color-white);
+        padding: 0.85rem 2.5rem;
+    }
+
+    .nav-container .nav-toggle-btn {
+        display: inline-block;
+        background: transparent;
+        font-size: 1.3rem;
+        cursor: pointer;
+    }
+}

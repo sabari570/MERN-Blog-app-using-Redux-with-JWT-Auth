@@ -1,0 +1,21 @@
+.error-page{
+    height: calc(100vh - 15rem);
+}
+
+.center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+}
+
+.error-page-thumbnail{
+    display: flex;
+    align-items: center;
+}
+
+.error-page-thumbnail img{
+height: 15rem;
+object-fit: contain;
+}

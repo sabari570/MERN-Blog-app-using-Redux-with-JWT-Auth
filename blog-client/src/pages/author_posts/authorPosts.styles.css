@@ -1,0 +1,14 @@
+.author-posts-container{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* MAKING THE AUTHOR POSTS PAGE RESPONSIVE */
+@media screen and (max-width: 800px) {
+    .author-posts-container{
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: 1fr;
+    }
+}

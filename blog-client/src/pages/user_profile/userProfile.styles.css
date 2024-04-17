@@ -1,0 +1,76 @@
+.profile-container{
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+
+.profile-details{
+    width: 100%;
+}
+
+.avatar-wrapper{
+    width: 15rem;
+    height: 15rem;
+    position: relative;
+    margin-inline: auto;
+    margin-top: 1rem;
+}
+
+.profile-avatar{
+    height: 100%;
+    border-radius: 50%;
+    border: 1rem solid var(--color-white);
+    overflow: hidden;
+}
+
+.profile-avatar img{
+    height: 15rem;
+    width: 15rem;
+    object-fit: cover;
+}
+
+.avatar-form{
+    height: 1rem;
+}
+
+.avatar-form input{
+    visibility: hidden;
+}
+
+.avatar-form label, .profile-avatar-btn{
+    background: var(--color-gray-900);
+    color: var(--color-white);
+    font-size: 1.2rem;
+    position: absolute;
+    right: 2rem;
+    bottom: 1.4rem;
+    width: 3rem;
+    height: 3rem;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+}
+
+.profile-avatar-btn{
+    cursor: pointer;
+    padding: 0;
+    font-size: 1.4rem;
+    background: var(--color-primary);
+}
+
+.profile-details h2{
+    margin-top: 1.5rem;
+}
+
+.form.profile-form{
+    margin-top: 3rem;
+    margin-inline: auto;
+    width: var(--form-width);
+}
+
+/* MAKING THE USER PROFILE PAGE RESPONSIVE */
+@media screen and (max-width: 800px) {
+    .form.profile-form, .form.profile-form button{
+        width: 100%;
+    }
+}

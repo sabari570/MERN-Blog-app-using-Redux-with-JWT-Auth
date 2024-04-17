@@ -1,0 +1,58 @@
+.dashboard-post-container {
+    background: var(--color-white);
+    padding: 0.6rem 1rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: var(--radius-2);
+}
+
+
+.dashboard-post-info {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.dashboard-thumbail {
+    border-radius: var(--radius-1);
+    overflow: hidden;
+}
+
+.dashboard-thumbail img {
+    width: 4rem;
+    height: 3rem;
+    object-fit: cover;
+}
+
+.dashboard-post-actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* MAKING THE DASHBOARD POST RESPONSIVE */
+@media screen and (max-width: 800px) {
+    .dashboard-post-container {
+        flex-direction: column;
+    }
+
+    .dashboard-post-actions {
+        margin-inline: auto;
+    }
+
+    .dashboard-post-info {
+        width: 100%;
+        gap: 1.5rem;
+    }
+
+    .dashboard-thumbail {
+        width: 5rem;
+        overflow: hidden;
+    }
+
+    .dashboard-post-info {
+        gap: 0.8rem;
+    }
+}

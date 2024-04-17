@@ -1,0 +1,39 @@
+.post-detail{
+    width: 50%;
+    background: var(--color-white);
+    margin-inline: auto;
+    padding: 2rem 0;
+}
+
+.post-detail-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.post-detail-buttons{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.post-detail-thumbnail{
+    margin: 1rem 0;
+    height: fit-content;
+    overflow: hidden;
+    max-height: 30rem;
+}
+
+.post-detail-container p{
+    margin-bottom: 0.7rem;
+}
+
+/* MAKING THE POST DETAIL PAGE RESPONSIVE */
+@media screen and (max-width: 800px){
+    .post-detail{
+        width: 100%;
+        background: transparent;
+        padding: 0;
+    }
+}

@@ -1,0 +1,41 @@
+# Node modules
+node_modules/
+
+# Client-side dependencies
+blog-client/node_modules/
+
+# Server-side dependencies
+blog-server/node_modules/
+
+# Environment variables
+*.env
+*.env.local
+*.env.development.local
+*.env.test.local
+*.env.production.local
+
+# Build files
+build/
+dist/
+out/
+
+# Dependency directories
+pids/
+logs/
+yarn-error.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Editor configuration
+*.swp
+*.swo
+*.swn
+*.swn
+*.swm
+*.swn
+
+# Others
+.idea/
+.vscode/

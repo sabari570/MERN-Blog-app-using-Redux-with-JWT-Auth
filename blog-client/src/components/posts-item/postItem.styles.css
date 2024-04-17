@@ -1,0 +1,40 @@
+.post {
+    background: var(--color-white);
+    padding: 1rem;
+    border-radius: var(--radius-4);
+    transition: var(--transition);
+    cursor: default;
+    padding-bottom: 3rem;
+    width: 100%;
+}
+
+.post:hover {
+    box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.post-thumbnail {
+    border-radius: var(--radius-3);
+    overflow: hidden;
+    height: 16rem;
+}
+
+.post-thumbnail img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.post-content {
+    margin-top: 1.5rem;
+}
+
+.post-content h3 {
+    margin: 1rem 0 0.6rem;
+}
+
+.post-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2rem;
+}

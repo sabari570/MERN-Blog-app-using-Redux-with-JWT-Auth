@@ -1,0 +1,47 @@
+.create-post-container h2{
+    margin-bottom: 1rem;
+}
+.blog-thumbnail{
+    height: 16rem;
+    border-radius: var(--radius-2);
+    overflow: hidden;
+    margin-bottom: 1.6rem;
+}
+
+.blog-thumbnail img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#create-blog-thumbnail{
+    display: none;
+}
+
+.create-post-thumbnail{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    margin-left: -1.5rem;
+}
+
+/* MAKING THE POST DETAIL PAGE RESPONSIVE */
+@media screen and (max-width: 800px){
+    .create-post-form{
+        position: relative;
+    }
+    .create-post-thumbnail label{
+        position: absolute;
+        top: -1rem;
+        left: 0.5rem;
+    }
+
+    .create-post-thumbnail input{
+        margin-top: 0.6rem;
+        margin-left: 1.5rem;
+    }
+
+    .create-post-form button{
+        width: 100%;
+    }
+}
